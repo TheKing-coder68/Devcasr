@@ -1,0 +1,26 @@
+body{
+	background-color: #000000;
+}
+.top-text{
+	color: #2f4443;
+}
+.intro-text{
+	color: #2f4443;
+}
+.signup-button{
+	position: relative;
+	left: 200px;
+	background-color: #2f4443;
+
+}
+.signup-button:hover{
+	background-color: #202e2c;
+}
+.login-button {
+	position: relative;
+	left: 200px;
+	background-color: #2f4443;
+}
+.login-button:hover{
+	background-color: #202e2c;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/base.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	{% block title %}<title>Home</title> {% endblock%}
+</head>
+
+<body>
+	<div class="navbar w3-bar w3-large">
+  		<button class="w3-hover-black w3-bar-item w3-button">Home</button>
+  		<button class="w3-hover-black w3-bar-item w3-button">View Projects</button>
+  		<button class="w3-hover-black w3-bar-item w3-button">Submit a Project</button>
+		<button class="w3-hover-black w3-bar-item w3-button">Login</button>
+		<button class="w3-hover-black w3-bar-item w3-button">Signup</button>
+	</div>
+	{% block content %}
+
+	{% endblock %}
+</body>
+
+</html>
