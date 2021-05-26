@@ -8,17 +8,17 @@ body{
 	color: #2f4443;
 }
 .signup-button{
-	position: relative;
-	left: 200px;
-	background-color: #2f4443;
+    position: relative;
 
+	background-color: #2f4443;
 }
 .signup-button:hover{
+    
 	background-color: #202e2c;
 }
 .login-button {
-	position: relative;
-	left: 200px;
+    position: relative;
+
 	background-color: #2f4443;
 }
 .login-button:hover{
