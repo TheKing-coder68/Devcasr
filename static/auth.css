@@ -1,0 +1,28 @@
+body{
+	background-color:#000000;
+}
+
+.navbar{
+	background-color: #FFD100;
+}
+
+.signup-form{
+	background-color: #FFD100;
+	position: relative;
+	bottom:-100px;
+	left:100px;
+	text-align: center;
+}
+.signup-form h1, label{
+	color:black;
+}
+.signup-form input{
+	color: black;
+}
+.login-form{
+	background-color: #FFD100;
+	position: relative;
+	bottom:165px;
+	left: 650px;
+	text-align: center;
+}

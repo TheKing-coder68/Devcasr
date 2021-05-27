@@ -2,25 +2,25 @@ body{
 	background-color: #000000;
 }
 .top-text{
-	color: #2f4443;
+	color: #FFD100;
 }
 .intro-text{
-	color: #2f4443;
+	color: #FFD100;
 }
 .signup-button{
     position: relative;
 
-	background-color: #2f4443;
+	background-color: #FFD100;
 }
 .signup-button:hover{
     
-	background-color: #202e2c;
+	background-color: #ffff00;
 }
 .login-button {
     position: relative;
 
-	background-color: #2f4443;
+	background-color: #FFD100;
 }
 .login-button:hover{
-	background-color: #202e2c;
+	background-color: #ffff00;
 }

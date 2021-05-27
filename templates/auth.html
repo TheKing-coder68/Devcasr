@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="static/auth.css">
+	<title>Signup or Login</title>
+</head>
+<body>
+		<div class="navbar w3-col l12 m12 s12 w3-bar w3-large">
+  			<button class="w3-hover-black w3-bar-item w3-button">Home</button>
+  			<button class="w3-hover-black w3-bar-item w3-button">View Projects</button>
+  			<button class="w3-hover-black w3-bar-item w3-button">Submit a Project</button>
+			<button class="w3-hover-black w3-bar-item w3-button">Login</button>
+			<button class="w3-hover-black w3-bar-item w3-button">Signup</button>
+		</div>
+	<div class="w3-container">
+		<!-- Signup-->
+		<form class="signup-form w3-card-4" style="width:30%">
+			<h1>Signup</h1>
+				<!-- User Name-->
+            <label for="userName"> Username </label> <br>
+            <input type="text" name="signup-username" id="signup-username" placeholder="Username"> <br>
+				<!-- Email-->
+			<label for="email"> Email </label> <br>
+            <input type="email" name="signup-email" id="signup-email" placeholder="Email"> <br>
+            	<!--Password-->
+            <label for="password"> Password</label> <br>
+            <input type="password" name="signup-password" id="signup-password" placeholder="Password"> <br>
+                <!--Submit-->
+    	    <input class="w3-margin-top" type="submit" id="submit" placeholder="Submit"> <br>
+		</form>
+		<!--Login -->
+		<form class="login-form w3-card-4" style= "width:30%;">
+			<h1>Login</h1>
+
+				<!-- User Name-->
+            <label for="userName"> Username </label> <br>
+            <input type="text" name="username" id="username" placeholder="Username"> <br>
+							<!-- Email-->
+			<label for="email"> Email </label> <br>
+            <input type="email" name="email" id="email" placeholder="Email"> <br>
+            	<!--Password-->
+            <label for="password"> Password</label> <br>
+            <input type="password" name="password" id="password" placeholder="Password"> <br>
+                <!--Submit-->
+    	    <input class="w3-margin-top" type="submit" id="submit" placeholder="Submit">
+		</form>
+	</div>
+</body>
+</html>
