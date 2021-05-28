@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Submissions</title>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="static/submit.css">
+<h1 id="big-text" align="center" class="w3-padding-64">Submit</h1>
+<form>
+    <label class="labels">Project Name</label>
+    <input class="project-name-input" type="text" name="project-name" id="project-name" placeholder="Enter Name"> <br>
+    <label class="labels">Github Link</label> <br>
+    <input class="github-link-input" type="text" name="github-link" id="github-link" placeholder="Enter Github Link"> <br>
+    <label class="labels">Project Description</label> <br>
+    <input class="project-describe-input" type="text" name="project-describe" id="project-describe" placeholder="Describe Your Project"> <br>
+    <input align="right" class="submit-button w3-btn w3-margin-top" type="submit" id="submit" placeholder="Submit"> <br>
+</form>
+{% endblock %}

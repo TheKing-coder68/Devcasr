@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+#big-text{
+    color:#FFD100;
+}
+.labels{
+    color:#FFD100;
+
+}
+.inputs{
+    background-color: #FFD100;
+}
+.project-name-input{
+    background-color:#FFD100;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.github-link-input{
+    background-color:#FFD100;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.project-describe-input{
+    background-color:#FFD100;
+    width: 100%;
+
+}
+.submit-button{
+    background-color: black;
+    color: #FFD100;
+    float: right;
+}
+.submit-button:hover{
+    background-color: #FFD100;
+    color: black;
+}

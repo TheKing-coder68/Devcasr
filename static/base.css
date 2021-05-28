@@ -1,3 +1,7 @@
 .navbar{
 	background-color: #FFD100;
 }
+.navbar-items:hover{
+	background-color: black;
+	color:#FFD100;
+}
