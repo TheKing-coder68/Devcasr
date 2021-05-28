@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Login</title>
+{% endblock %}
+{% block content %}
+		<!--Login -->
+		<form method= "POST" class="login-form w3-card-4" style= "width:30%;">
+			<h1>Login</h1>
+
+				<!-- User Name-->
+            <label for="userName"> Username </label> <br>
+            <input type="text" name="login-username" id="login-username" placeholder="Username"> <br>
+            	<!--Password-->
+            <label for="password"> Password</label> <br>
+            <input type="password" name="login-password" id="login-password" placeholder="Password"> <br>
+                <!--Submit-->
+    	    <input class="w3-margin-top" type="submit" id="submit" placeholder="Submit">
+		</form>
+{% endblock %}

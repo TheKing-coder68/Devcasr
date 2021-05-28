@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+	<title>Signup or Login</title>
+{% endblock %}
+
+{% block content %}
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="static/auth.css">
+
+	<div class="w3-container">
+		<!-- Signup-->
+		<form method="POST"class="signup-form w3-card-4" style="width:30%">
+			<h1>Signup</h1>
+				<!-- User Name-->
+            <label for="userName"> Username </label> <br>
+            <input type="text" name="signup-username" id="signup-username" placeholder="Username"> <br>
+				<!-- Email-->
+			<label for="email"> Email </label> <br>
+            <input type="email" name="signup-email" id="signup-email" placeholder="Email"> <br>
+            	<!--Password-->
+            <label for="password"> Password</label> <br>
+            <input type="password" name="signup-password" id="signup-password" placeholder="Password"> <br>
+                <!--Submit-->
+    	    <input class="w3-margin-top" type="submit" id="submit" placeholder="Submit"> <br>
+		</form>
+	</div>
+{% endblock %}
