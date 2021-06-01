@@ -48,6 +48,18 @@ def login():
 
 @app.route('/submit', methods=['POST','GET'])
 def submit():
+	if request.method=="POST":
+
+		posts = mongo.db.Posts
+
+		project_name = request.form.get("project-name")
+		github_link = request.form.get("github-link")
+		project_describe = request.form.get("project-describe")
+
+		posts.insert_one({"Project-Name":project_name, "Github-Link":github_link, "Project-Description":project_describe})
+		flash("Your submission has been saved!")
+		return render_template("projects.html")
 	return render_template("submit.html")
+
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port='8080', debug=True)

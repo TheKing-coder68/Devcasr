@@ -23,7 +23,7 @@ body{
 }
 .project-describe-input{
     background-color:#FFD100;
-    width: 100%;
+    display: inline-block;
 
 }
 .submit-button{
