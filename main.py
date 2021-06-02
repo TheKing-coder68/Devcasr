@@ -56,10 +56,15 @@ def submit():
 		github_link = request.form.get("github-link")
 		project_describe = request.form.get("project-describe")
 
-		posts.insert_one({"Project-Name":project_name, "Github-Link":github_link, "Project-Description":project_describe})
+		posts.insert_one({"Project_Name":project_name, "Github_Link":github_link, "Project_Description":project_describe})
 		flash("Your submission has been saved!")
 		return render_template("projects.html")
 	return render_template("submit.html")
 
+@app.route('/projects', methods=['GET','POST'])
+def projects():
+	posts=mongo.db.Posts
+	project_name = posts.find({})
+	return render_template('projects.html', project_name = project_name)
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port='8080', debug=True)

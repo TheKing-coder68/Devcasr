@@ -2,4 +2,12 @@
 
 {% block content %}
 <h1>Projects</h1>
+{% for project_names in project_name %}
+<div class="w3-card" align="center">
+
+    <h3>{{project_names.Project_Name.capitalize()}}</h3>
+    <h3>{{project_names.Github_Link.capitalize()}}</h3>
+    <h3>{{project_names.Project_Description.capitalize()}}</h3>
+</div>
+{% endfor  %}
 {% endblock %}
