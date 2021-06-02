@@ -4,4 +4,5 @@
 .navbar-items:hover{
 	background-color: black;
 	color:#FFD100;
+	float: left;
 }

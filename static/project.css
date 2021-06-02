@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+.project-cards{
+position: relative;
+left:400px;
+color:#FFD100;
+padding-top: 50px;;
+}
+#big-text{
+    color:#FFD100;
+}

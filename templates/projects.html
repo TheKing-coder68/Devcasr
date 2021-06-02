@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Projects</h1>
+<link rel="stylesheet" href="static/project.css">
+<h1 id="big-text" align="center">Projects</h1>
 {% for project_names in project_name %}
-<div class="w3-card" align="center">
+<div class=" project-cards w3-card" align="center" style="width:30%;">
 
     <h3>{{project_names.Project_Name.capitalize()}}</h3>
     <h3>{{project_names.Github_Link.capitalize()}}</h3>

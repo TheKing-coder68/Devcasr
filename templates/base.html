@@ -12,7 +12,7 @@
 <body>
 	<div class="navbar w3-col l12 m12 s12 w3-bar w3-large">
   		<a href= "{{url_for('home')}}"><button class="navbar-items w3-hover-black w3-bar-item w3-button">Home</button></a>
-  		<button class="navbar-items w3-hover-black w3-bar-item w3-button">View Projects</button>
+  		<a href="{{url_for('projects')}}"><button class="navbar-items w3-hover-black w3-bar-item w3-button">View Projects</button></a>
   		<a href="{{url_for('submit')}}"><button class="navbar-items w3-hover-black w3-bar-item w3-button">Submit a Project</button></a>
 		<a href="{{url_for('login')}}"><button class="navbar-items w3-hover-black w3-bar-item w3-button">Login</button></a>
 		<a href="{{url_for('signup')}}"><button class="navbar-items w3-hover-black w3-bar-item w3-button">Signup</button></a>
