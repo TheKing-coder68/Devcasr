@@ -2,13 +2,23 @@
 
 {% block content %}
 <link rel="stylesheet" href="static/project.css">
-<h1 id="big-text" align="center">Projects</h1>
+<h1 id="big-text" class=""align="center">Projects</h1>
+
 {% for project_names in project_name %}
 <div class=" project-cards w3-card" align="center" style="width:30%;">
+    <form>
+        <h6 id="user-name">This project was made by:</h6><br>
+        <label id="labels" for="project-name">Project Name</label>
+        <h3 name="project-name">{{project_names.Project_Name.capitalize()}}</h3><br>
 
-    <h3>{{project_names.Project_Name.capitalize()}}</h3>
-    <h3>{{project_names.Github_Link.capitalize()}}</h3>
-    <h3>{{project_names.Project_Description.capitalize()}}</h3>
+        <label id="labels" for="github-link">Github/Website Link</label>
+        <h3 name="github-link"> {{project_names.Github_Link.capitalize()}}</h3><br>
+
+        <label id="labels" for="project-description">Project Description</label>
+        <h3 name="project-description"> {{project_names.Project_Description.capitalize()}}</h3>
+
+    </form>
 </div>
 {% endfor  %}
+
 {% endblock %}

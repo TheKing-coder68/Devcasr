@@ -7,6 +7,17 @@ left:400px;
 color:#FFD100;
 padding-top: 50px;;
 }
+#user-name, #project-name{
+    position: relative;
+    right:300px;
+}
+h3{
+    font-size: 30px;
+}
 #big-text{
     color:#FFD100;
+    padding-top: 100px;
+}
+#labels{
+    font-size:15px;
 }
