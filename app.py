@@ -4,6 +4,7 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 dotenv.load_dotenv()
+app.config['ENV'] = "production"
 app.config['MONGO_URI'] = os.environ.get('MONGO_URI', None)
 mongo = PyMongo(app)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', None)
@@ -67,4 +68,4 @@ def projects():
 	project_name = posts.find({})
 	return render_template('projects.html', project_name = project_name)
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port='8080', debug=True)
+	app.run(host='0.0.0.0', port='8080)
